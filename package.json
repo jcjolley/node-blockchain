@@ -21,7 +21,10 @@
     "url": "https://github.com/jcjolley/node-blockchain/issues"
   },
   "homepage": "https://github.com/jcjolley/node-blockchain#readme",
-  "dependencies": {
-    "@types/node": "^10.3.0"
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.3.0",
+    "pm2": "^2.10.4",
+    "typescript": "^2.9.1"
   }
 }
