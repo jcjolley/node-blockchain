@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node dist/blockchain.js",
     "build": "tsc",
+    "stop": "forever stop $(forever list | grep blockchain | perl -pe 's/.*\\[(\\d+)\\].*/\\1/')",
     "dev": "chokidar \"src/**/*\" -c \"npm run build && npm run start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/jcjolley/node-blockchain/issues"
   },
-  "homepage": "https://github.com/jcjolley/node-blockchain#readme"
+  "homepage": "https://github.com/jcjolley/node-blockchain#readme",
+  "dependencies": {
+    "@types/node": "^10.3.0"
+  }
 }
