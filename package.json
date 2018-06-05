@@ -22,7 +22,13 @@
   },
   "homepage": "https://github.com/jcjolley/node-blockchain#readme",
   "dependencies": {
-    "murmurhash-native": "^3.2.3"
+    "body-parser": "^1.18.3",
+    "commander": "^2.15.1",
+    "express": "^4.16.3",
+    "murmurhash-native": "^3.2.3",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "uuidv4": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^10.3.0",

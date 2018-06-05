@@ -1,16 +1,12 @@
-import { junk } from "./blockchain";
+import { setupServer } from "./server";
+const program = require('commander');
 
-junk();
+program
+  .version('1.0.0')
+  .option('-p, --port <n>', 'Specify port to run on', parseInt)
+  .parse(process.argv)
 
-async function goForever() {
-  while (true) {
-    await new Promise(resolve => {
-      setTimeout(() => {
-        console.log(`I'm doing science`)
-        resolve(true);
-      }, 5000);
-    });
-  }
-}
-
-goForever();
+const app = setupServer();
+const port = program.port || 3001;
+app.listen(port);
+console.log(`Server started on port ${port}`);
