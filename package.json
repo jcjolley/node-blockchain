@@ -21,7 +21,9 @@
     "url": "https://github.com/jcjolley/node-blockchain/issues"
   },
   "homepage": "https://github.com/jcjolley/node-blockchain#readme",
-  "dependencies": {},
+  "dependencies": {
+    "murmurhash-native": "^3.2.3"
+  },
   "devDependencies": {
     "@types/node": "^10.3.0",
     "pm2": "^2.10.4",
